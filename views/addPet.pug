@@ -1,0 +1,25 @@
+extends layout
+
+block content
+  .container-fluid
+    .row
+      .col-md-12
+        form.form-horizontal(method='POST' action="/" role="form" )
+          .form-group
+            input#petNameInp.form-control(autofocus type="text" placeholder="Pet Name" name="name")
+          .form-group
+            input#petBreedInp.form-control( type="text" placeholder="Pet Breed" name="breed")
+          .form-group
+            input#petAgeInp.form-control( type="number" placeholder="Pet Age" name="age")
+          .form-group
+            input#petImgInp.form-control( type="file" name='base64')
+            p.help-block
+              ooo Upload images.
+      
+          .form-group
+            .col-sm-offset-2.col-sm-10
+              button.btn.btn-default(type="submit")
+                please Submit
+              
+          
+            
